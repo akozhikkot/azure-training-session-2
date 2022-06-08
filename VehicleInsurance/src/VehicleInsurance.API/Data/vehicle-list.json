@@ -1,0 +1,42 @@
+[
+  {
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "Year": "2022",
+    "TransmissionType": 1,
+    "FuelType": 1,
+    "Trim": "ST-Line"
+  },
+  {
+    "Make": "Ford",
+    "Model": "Fiesta",
+    "Year": "2022",
+    "TransmissionType": 1,
+    "FuelType": 1,
+    "Trim": "ST-Line Vignale"
+  },
+  {
+    "Make": "Toyota",
+    "Model": "Yaris",
+    "Year": "2020",
+    "TransmissionType": 2,
+    "FuelType": 1,
+    "Trim": "Design VVT-i"
+  },
+  {
+    "Make": "Toyota",
+    "Model": "Yaris",
+    "Year": "2020",
+    "TransmissionType": 2,
+    "FuelType": 1,
+    "Trim": "Icon Tech VVT-i"
+  },
+  {
+    "Make": "Toyota",
+    "Model": "Yaris",
+    "Year": "2020",
+    "TransmissionType": 2,
+    "FuelType": 1,
+    "Trim": "Y20 VVT-i"
+  }
+]
