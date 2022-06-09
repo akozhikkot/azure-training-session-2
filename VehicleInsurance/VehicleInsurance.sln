@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BEA4E85D-65A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleInsurance.API", "src\VehicleInsurance.API\VehicleInsurance.API.csproj", "{09B116D6-36A5-41C3-B81B-517430D34D53}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleInsurance.Functions", "src\VehicleInsurance.Functions\VehicleInsurance.Functions.csproj", "{6DDF9F3F-FF56-438F-A7E9-E70FA7AC3836}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{09B116D6-36A5-41C3-B81B-517430D34D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09B116D6-36A5-41C3-B81B-517430D34D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09B116D6-36A5-41C3-B81B-517430D34D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DDF9F3F-FF56-438F-A7E9-E70FA7AC3836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDF9F3F-FF56-438F-A7E9-E70FA7AC3836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDF9F3F-FF56-438F-A7E9-E70FA7AC3836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDF9F3F-FF56-438F-A7E9-E70FA7AC3836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{09B116D6-36A5-41C3-B81B-517430D34D53} = {BEA4E85D-65A9-4412-816D-26DEB52F11C4}
+		{6DDF9F3F-FF56-438F-A7E9-E70FA7AC3836} = {BEA4E85D-65A9-4412-816D-26DEB52F11C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95BAADAA-5DAC-4134-92AF-CAC31BFC1D8F}

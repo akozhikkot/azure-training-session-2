@@ -1,15 +1,22 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using VehicleInsurance.API.Contracts;
+using VehicleInsurance.API.Infrastructure;
 
 namespace VehicleInsurance.API.Services
 {
     public class UnderwritingService : IUnderwritingService
     {
         private readonly IDistributedCache _cache;
-
-        public UnderwritingService(IDistributedCache cache)
+        private readonly IMessageSender _messageSender;
+        private readonly IConfiguration _configuration;
+        public UnderwritingService(
+            IDistributedCache cache,
+            IMessageSender messageSender,
+            IConfiguration configuration)
         {
             _cache = cache;
+            _messageSender = messageSender;
+            _configuration = configuration;
         }
 
         public async Task<UnderwritingResponse> PerformUnderwriting(
@@ -47,8 +54,15 @@ namespace VehicleInsurance.API.Services
                         UnderwritingResult.ACCEPTED,
                         new List<string>());
             }
-             
+
+            await NotifyUnderwritingDecision(response);
             return response;
+        }
+
+        public async Task NotifyUnderwritingDecision(UnderwritingResponse response)
+        {
+            var queueName = _configuration.GetValue<string>("Underwriting:UnderwritingDecisionQueue");
+            await _messageSender.Send(response, queueName);
         }
     }
 }
